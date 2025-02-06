@@ -1,0 +1,58 @@
+============================================
+Comandos usados en la practica 1.
+
+date
+sudo su
+dnf install update
+dnf update -y
+dnf install upgrade
+dnf upgrade -y
+dnf repolist
+dnf repolis all
+dnf repolist
+dnf search nmap
+dnf search Bashtop
+exit
+clear
+sudo su 
+cd Desktop/
+ls
+sudo dnf install git
+git clone https://github.com/aristocratos/bashtop.git
+ls
+cd bashtop/
+ls -l
+./bashtop
+top
+cd ..
+rm -rf bashtop/
+ls
+./bashtop
+dnf autoremove
+date
+
+
+============================================
+Comandos usados en la practica 2.
+
+date
+nano /etc/crontab
+crontab -e
+023*** dnf update -y
+crontab -l
+crontab -e
+03**0/sbin/shutdown -r now
+contrab -l
+exit
+cd /tmp
+ls
+exit
+cd Desktop
+echo 'rm -rf /tmp/*' | at now + 1 minute
+atq
+cd/tmp
+ls
+atq
+date
+
+============================================
