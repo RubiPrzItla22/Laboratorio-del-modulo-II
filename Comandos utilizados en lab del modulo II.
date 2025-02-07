@@ -2,17 +2,12 @@
 Comandos usados en la practica 1.
 
 date
-sudo su
-dnf install update
-dnf update -y
-dnf install upgrade
-dnf upgrade -y
-dnf repolist
+sudo dnf update -y
+sudo dnf upgrade -y
 dnf repolis all
 dnf repolist
 dnf search nmap
 dnf search Bashtop
-exit
 clear
 sudo su 
 cd Desktop/
@@ -24,11 +19,15 @@ cd bashtop/
 ls -l
 ./bashtop
 top
+./bashtop
+ls
 cd ..
+ls
 rm -rf bashtop/
 ls
 ./bashtop
 dnf autoremove
+history
 date
 
 
@@ -38,21 +37,21 @@ Comandos usados en la practica 2.
 date
 nano /etc/crontab
 crontab -e
-023*** dnf update -y
+0 23 * * * dnf update -y
 crontab -l
 crontab -e
-03**0/sbin/shutdown -r now
+0 3 * * 0 /sbin/shutdown -r now
 contrab -l
-exit
-cd /tmp
+cd tmp/
 ls
-exit
-cd Desktop
-echo 'rm -rf /tmp/*' | at now + 1 minute
-atq
-cd/tmp
+cd ..
+at now + 1 minute
+rm -rf /tmp/*
+date
+cd tmp/
 ls
 atq
 date
+history
 
 ============================================
